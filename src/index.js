@@ -3,7 +3,10 @@ let building = null;
 
 const app = new THING.App({
   url: "../campus/campus.gltf",
-  comlete: (e) => {
+  complete: (e) => {
+    console.log("123");
+    console.log(e);
+    
     campus = e.object;
     building = campus.query(".Building")[0];
     createMarkerForDevice();
