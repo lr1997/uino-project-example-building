@@ -8,7 +8,7 @@ const app = new THING.App({
     console.log(e);
     
     campus = e.object;
-    building = campus.query(".Building")[0];
+    building = app.query(".Building")[0];
     createMarkerForDevice();
   },
 });
